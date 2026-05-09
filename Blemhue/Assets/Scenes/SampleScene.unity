@@ -230,6 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 327318561}
+  - component: {fileID: 327318562}
   m_Layer: 5
   m_Name: HungerSystem
   m_TagString: Untagged
@@ -257,6 +258,20 @@ RectTransform:
   m_AnchoredPosition: {x: 333, y: -95}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &327318562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327318560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464357ae0d825b24b90dbcb22402cf9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  foodInStomach:
+  - {fileID: 11400000, guid: 0bb025ed0b0f4b548864e19d5e33298d, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
