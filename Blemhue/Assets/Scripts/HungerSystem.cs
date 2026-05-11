@@ -8,6 +8,9 @@ public class HungerSystem : MonoBehaviour
 
     public List<GameObject> foodInStomach;
     public Transform hungerBar;
+    public float maxStomach = 800f;
+    public float currentStomach = 0f;
+    public bool isFull;
 
     //public void Update()
     //{
@@ -28,8 +31,18 @@ public class HungerSystem : MonoBehaviour
 
     public void Add_Foodbar(GameObject foodBar)
     {
-        foodInStomach.Add(foodBar);
-        Instantiate(foodBar, hungerBar);
+        if (!isFull)
+        {
+            //RectTransform foodBarRect = foodBar.GetComponent<RectTransform>();
+            //currentStomach += foodBar.RectTransform.width;
+            foodInStomach.Add(foodBar);
+            Instantiate(foodBar, hungerBar);
+        }
+        else if (isFull)
+        {
+            return;
+        }
+
     }
 
     public void Depleat_FoodBar(FoodBar foodBar)
