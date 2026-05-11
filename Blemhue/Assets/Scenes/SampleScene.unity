@@ -170,7 +170,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   foodInStomach: []
   hungerBar: {fileID: 539070279}
-  baseBar: {fileID: 4509276513272909710, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
 --- !u!1 &426743300
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,8 +428,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 747088652}
+  m_Children: []
   m_Father: {fileID: 327318561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -767,108 +765,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &747088651
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 539070279}
-    m_Modifications:
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9719.998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4509276513272909710, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-      propertyPath: m_Name
-      value: BaseBar
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
---- !u!224 &747088652 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1096274147916581864, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
-  m_PrefabInstance: {fileID: 747088651}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1354285397
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1354285399}
   - component: {fileID: 1354285400}
+  - component: {fileID: 1354285401}
   m_Layer: 0
   m_Name: 'Tester '
   m_TagString: Untagged
@@ -980,13 +877,13 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 327318562}
-        m_TargetAssemblyTypeName: HungerSystem, Assembly-CSharp
-        m_MethodName: Add_FoodBar
-        m_Mode: 2
+      - m_Target: {fileID: 1354285401}
+        m_TargetAssemblyTypeName: TesterScripts, Assembly-CSharp
+        m_MethodName: OnTButton
+        m_Mode: 0
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 0bb025ed0b0f4b548864e19d5e33298d, type: 2}
-          m_ObjectArgumentAssemblyTypeName: FoodBar, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -996,13 +893,13 @@ MonoBehaviour:
     m_ActionName: 'UI/Tester Button 1[/Keyboard/t]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 327318562}
-        m_TargetAssemblyTypeName: HungerSystem, Assembly-CSharp
-        m_MethodName: Add_FoodBar
-        m_Mode: 2
+      - m_Target: {fileID: 1354285401}
+        m_TargetAssemblyTypeName: TesterScripts, Assembly-CSharp
+        m_MethodName: OnUButton
+        m_Mode: 0
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: c08e59944ed5d134fb92c4b70a132e9a, type: 2}
-          m_ObjectArgumentAssemblyTypeName: FoodBar, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1012,13 +909,13 @@ MonoBehaviour:
     m_ActionName: 'UI/Tester Button 2[/Keyboard/y]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 327318562}
-        m_TargetAssemblyTypeName: HungerSystem, Assembly-CSharp
-        m_MethodName: Add_FoodBar
-        m_Mode: 2
+      - m_Target: {fileID: 1354285401}
+        m_TargetAssemblyTypeName: TesterScripts, Assembly-CSharp
+        m_MethodName: OnYButton
+        m_Mode: 0
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 19fa1eb58eaa08a47a6cf6bbf5a915bb, type: 2}
-          m_ObjectArgumentAssemblyTypeName: FoodBar, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1031,6 +928,22 @@ MonoBehaviour:
   m_DefaultActionMap: UI
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1354285401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354285397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f43880fce33b514ead6dcf7f0f74899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TesterScripts
+  hungerSystem: {fileID: 327318562}
+  carrotBar: {fileID: 2629417279554163312, guid: 6a35a8b8c21ba5c4dbe6b9d2ae9e906e, type: 3}
+  meatBar: {fileID: 7605036597214865532, guid: 1525624a743d05f41850962cab5ed122, type: 3}
+  oliveBar: {fileID: 4017512984548058959, guid: 9116c0b96762b6c4cbf607092780bf82, type: 3}
 --- !u!1 &1434107908
 GameObject:
   m_ObjectHideFlags: 0

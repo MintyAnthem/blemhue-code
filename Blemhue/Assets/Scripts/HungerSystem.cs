@@ -6,9 +6,8 @@ using UnityEngine.UI;
 public class HungerSystem : MonoBehaviour
 {
 
-    public List<FoodBar> foodInStomach;
+    public List<GameObject> foodInStomach;
     public Transform hungerBar;
-    public GameObject baseBar;
 
     //public void Update()
     //{
@@ -27,17 +26,10 @@ public class HungerSystem : MonoBehaviour
     //    }
     //}
 
-    public void Add_FoodBar(FoodBar foodBar)
+    public void Add_Foodbar(GameObject foodBar)
     {
         foodInStomach.Add(foodBar);
-
-        GameObject newBar = baseBar;
-        Instantiate(newBar, hungerBar);
-        newBar.name = foodBar.name;
-        Image newBarImage = newBar.GetComponent<Image>();
-        newBarImage.color = foodBar.color;
-        RectTransform newBarRect = newBar.GetComponent<RectTransform>();
-        newBarRect.sizeDelta = new Vector2(foodBar.fullness, 60);
+        Instantiate(foodBar, hungerBar);
     }
 
     public void Depleat_FoodBar(FoodBar foodBar)
