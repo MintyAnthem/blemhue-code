@@ -31,7 +31,9 @@ public class HungerSystem : MonoBehaviour
             else if (foodInStomach.Count >= 1)
             {
                 isEmpty = false;
-                //foodInStomach[foodInStomach.Count - 1].Deplete_FoodBar;
+                //FoodBar digestingFoodBarScript = foodInStomach[foodInStomach.Count - 1].GetComponent<FoodBar>();
+                //digestingFoodBarScript.Deplete_Foodbar();
+                //Transform lastChild = parentTransform.GetChild(parentTransform.childCount - 1);
             }
         }
 

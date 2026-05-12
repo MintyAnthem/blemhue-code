@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class FoodBar : MonoBehaviour
 {
+    
     public FoodBarStatBlock foodBarStatBlock;
     public RectTransform foodBarRect;
     public Image foodBarImage;
