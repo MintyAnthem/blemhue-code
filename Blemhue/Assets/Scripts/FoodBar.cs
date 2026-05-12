@@ -16,10 +16,7 @@ public class FoodBar : MonoBehaviour
         currentFullness = foodBarStatBlock.fullness;
     }
 
-    public void Deplete_Foodbar()
-    {
-        foodBarImage.fillAmount = currentFullness / foodBarStatBlock.fullness;
-        currentFullness -= Time.deltaTime * foodBarStatBlock.quality;
-    }
+
+
 
 }

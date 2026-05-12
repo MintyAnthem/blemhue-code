@@ -10,6 +10,8 @@ public class HungerSystem : MonoBehaviour
     public GameObject baseFoodBar;
     public FoodBar baseFoodBarScript;
     public Transform hungerBar;
+    public Transform lastFoodBar;
+    public FoodBar lastFoodBarScript;
     public float maxStomach = 800f;
     public float currentStomach = 0f;
     public bool isFull;
@@ -31,9 +33,9 @@ public class HungerSystem : MonoBehaviour
             else if (foodInStomach.Count >= 1)
             {
                 isEmpty = false;
-                //FoodBar digestingFoodBarScript = foodInStomach[foodInStomach.Count - 1].GetComponent<FoodBar>();
-                //digestingFoodBarScript.Deplete_Foodbar();
-                //Transform lastChild = parentTransform.GetChild(parentTransform.childCount - 1);
+                lastFoodBar = hungerBar.GetChild(hungerBar.childCount - 1);
+                lastFoodBarScript = lastFoodBar.GetComponent<FoodBar>();
+                Deplete_Foodbar(lastFoodBarScript);
             }
         }
 
@@ -73,6 +75,17 @@ public class HungerSystem : MonoBehaviour
             return;
         }
 
+    }
+
+    public void Deplete_Foodbar(FoodBar foodBar)
+    {
+        foodBar.foodBarImage.fillAmount = foodBar.currentFullness / foodBar.foodBarStatBlock.fullness;
+        foodBar.currentFullness -= Time.deltaTime * foodBar.foodBarStatBlock.quality;
+
+        if (foodBar.currentFullness <= 0)
+        {
+            Destroy(lastFoodBar);
+        }
     }
 
     //public void Deplete_FoodBar(GameObject foodBar)

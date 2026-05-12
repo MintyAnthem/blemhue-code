@@ -59,18 +59,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.050980397, g: 0.7372549, b: 0.10980393, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1822c3182d933844a9d974e887057187, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e76edb4feeb764fa03ed66dff6ea67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  foodBarStatBlock: {fileID: 11400000, guid: df3ebd9012f045f40a8ca8d2d2885b1a, type: 2}
+  foodBarStatBlock: {fileID: 11400000, guid: 85931867b5a89a04eaa99ef271f6a617, type: 2}
   foodBarRect: {fileID: 1096274147916581864}
   foodBarImage: {fileID: 549740877679822141}
   currentFullness: 0

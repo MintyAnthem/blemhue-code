@@ -172,6 +172,8 @@ MonoBehaviour:
   baseFoodBar: {fileID: 4509276513272909710, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
   baseFoodBarScript: {fileID: -846241222849520343, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
   hungerBar: {fileID: 539070279}
+  lastFoodBar: {fileID: 0}
+  lastFoodBarScript: {fileID: 0}
   maxStomach: 800
   currentStomach: 0
   isFull: 0
