@@ -41,10 +41,22 @@ public class HungerSystem : MonoBehaviour
     {
         if (!isFull)
         {
-            baseFoodBarScript.foodBarStatBlock = foodBarStats;
-            baseFoodBar.name = foodBarStats.name;
-            GameObject foodBarClone = Instantiate(baseFoodBar, hungerBar);
-            foodInStomach.Add(foodBarClone);
+            currentStomach += foodBarStats.fullness;
+
+            if(currentStomach < maxStomach)
+            {
+                baseFoodBarScript.foodBarStatBlock = foodBarStats;
+                baseFoodBar.name = foodBarStats.name;
+                GameObject foodBarClone = Instantiate(baseFoodBar, hungerBar);
+                foodInStomach.Add(foodBarClone);
+            }
+            else if (currentStomach >= maxStomach)
+            {
+                float stomachDifference = currentStomach - maxStomach;
+                currentStomach -= stomachDifference;
+            }
+
+
         }
         else if (isFull)
         {
