@@ -85,6 +85,8 @@ public class HungerSystem : MonoBehaviour
         if (foodBar.currentFullness <= 0)
         {
             Destroy(lastFoodBar);
+            lastFoodBar = hungerBar.GetChild(hungerBar.childCount - 1);
+            lastFoodBarScript = lastFoodBar.GetComponent<FoodBar>();
         }
     }
 
