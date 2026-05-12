@@ -169,7 +169,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   foodInStomach: []
+  baseFoodBar: {fileID: 4509276513272909710, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
+  baseFoodBarScript: {fileID: -846241222849520343, guid: 6d5b6b71c5ebf094fa65418e61ba04ec, type: 3}
   hungerBar: {fileID: 539070279}
+  maxStomach: 800
+  currentStomach: 0
+  isFull: 0
+  isEmpty: 0
 --- !u!1 &426743300
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,9 +947,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TesterScripts
   hungerSystem: {fileID: 327318562}
-  carrotBar: {fileID: 2629417279554163312, guid: 6a35a8b8c21ba5c4dbe6b9d2ae9e906e, type: 3}
-  meatBar: {fileID: 7605036597214865532, guid: 1525624a743d05f41850962cab5ed122, type: 3}
-  oliveBar: {fileID: 4017512984548058959, guid: 9116c0b96762b6c4cbf607092780bf82, type: 3}
+  carrotBar: {fileID: 11400000, guid: 0bb025ed0b0f4b548864e19d5e33298d, type: 2}
+  meatBar: {fileID: 11400000, guid: c08e59944ed5d134fb92c4b70a132e9a, type: 2}
+  oliveBar: {fileID: 11400000, guid: 19fa1eb58eaa08a47a6cf6bbf5a915bb, type: 2}
 --- !u!1 &1434107908
 GameObject:
   m_ObjectHideFlags: 0

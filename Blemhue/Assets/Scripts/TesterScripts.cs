@@ -4,9 +4,9 @@ using UnityEngine.InputSystem;
 public class TesterScripts : MonoBehaviour
 {
     public HungerSystem hungerSystem;
-    public GameObject carrotBar;
-    public GameObject meatBar;
-    public GameObject oliveBar;
+    public FoodBarStatBlock carrotBar;
+    public FoodBarStatBlock meatBar;
+    public FoodBarStatBlock oliveBar;
 
     public void OnTButton(InputAction.CallbackContext context)
     {

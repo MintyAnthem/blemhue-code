@@ -7,36 +7,44 @@ public class HungerSystem : MonoBehaviour
 {
 
     public List<GameObject> foodInStomach;
+    public GameObject baseFoodBar;
+    public FoodBar baseFoodBarScript;
     public Transform hungerBar;
     public float maxStomach = 800f;
     public float currentStomach = 0f;
     public bool isFull;
+    public bool isEmpty;
 
-    //public void Update()
-    //{
-    //    if (foodInStomach.Count == 0)
-    //    {
-    //        return;
-    //    }
-    //    else
-    //    {
-    //        //for (int i = 0; i < foodInStomach.Count; i++)
-    //        //{
-    //        //    // Access item by index
-    //        //    Debug.Log("Enemy name: " + enemies[i].name);
-    //        //}
-    //        return;
-    //    }
-    //}
+    public void Start()
+    {
+        isEmpty = true;
+    }
 
-    public void Add_Foodbar(GameObject foodBar)
+    public void Update()
     {
         if (!isFull)
         {
-            //RectTransform foodBarRect = foodBar.GetComponent<RectTransform>();
-            //currentStomach += foodBar.RectTransform.width;
-            foodInStomach.Add(foodBar);
-            Instantiate(foodBar, hungerBar);
+            if (foodInStomach.Count <= 0)
+            {
+                isEmpty = true;
+            }
+            else if (foodInStomach.Count >= 1)
+            {
+                isEmpty = false;
+                //foodInStomach[foodInStomach.Count - 1].Deplete_FoodBar;
+            }
+        }
+
+     }
+
+    public void Add_Foodbar(FoodBarStatBlock foodBarStats)
+    {
+        if (!isFull)
+        {
+            baseFoodBarScript.foodBarStatBlock = foodBarStats;
+            baseFoodBar.name = foodBarStats.name;
+            GameObject foodBarClone = Instantiate(baseFoodBar, hungerBar);
+            foodInStomach.Add(foodBarClone);
         }
         else if (isFull)
         {
@@ -45,8 +53,9 @@ public class HungerSystem : MonoBehaviour
 
     }
 
-    public void Depleat_FoodBar(FoodBar foodBar)
-    {
-        return;
-    }
+    //public void Deplete_FoodBar(GameObject foodBar)
+    //{
+    //    foodBar.Image.fillAmount = playerStats.currentWait / playerStats.maxWait;
+    //    playerStats.currentWait -= Time.deltaTime * playerStats.currentSpeed;
+    //}
 }
