@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e76edb4feeb764fa03ed66dff6ea67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  foodBarStatBlock: {fileID: 11400000, guid: 19fa1eb58eaa08a47a6cf6bbf5a915bb, type: 2}
+  foodBarStatBlock: {fileID: 11400000, guid: df3ebd9012f045f40a8ca8d2d2885b1a, type: 2}
   foodBarRect: {fileID: 1096274147916581864}
   foodBarImage: {fileID: 549740877679822141}
   currentFullness: 0
