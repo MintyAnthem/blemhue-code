@@ -22,6 +22,7 @@ public class HungerSystem : MonoBehaviour
         isEmpty = true;
     }
 
+    // this does a thing
     public void Update()
     {
         if (!isFull)
@@ -84,7 +85,7 @@ public class HungerSystem : MonoBehaviour
 
         if (foodBar.currentFullness <= 0)
         {
-            Destroy(lastFoodBar);
+            Destroy(foodBar.foodBarObj);
             lastFoodBar = hungerBar.GetChild(hungerBar.childCount - 1);
             lastFoodBarScript = lastFoodBar.GetComponent<FoodBar>();
         }
